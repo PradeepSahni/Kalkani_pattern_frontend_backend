@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "f9e4778f-4ede-4c08-aa88-7303c762068c",
+		"name": "backendTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9525079"
+	},
+	"item": [
+		{
+			"name": "{{BASE_URL}}/api/pattern/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/pattern/5",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"pattern",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/getUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/getUsers?city=Fort Lelandport&search=Ke",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"getUsers"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Fort Lelandport"
+						},
+						{
+							"key": "search",
+							"value": "Ke"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"firstName\": \"Kenya\",\r\n    \"lastName\": \"Cummerata\",\r\n    \"mobile\": \"202.465.8792\",\r\n    \"email\": \"Cloyd146@hotmail.com\",\r\n    \"birthDay\": \"2002-06-05T21:45:51.000Z\",\r\n    \"addresses\": [\r\n        {\r\n            \"id\": 1,\r\n            \"uID\": 1,\r\n            \"add1\": \"7150 Percy Pike\",\r\n            \"add2\": \"48002 Welch Extensions\",\r\n            \"pinCode\": 9476,\r\n            \"city\": \"Fort Lelandport\",\r\n            \"state\": \"North Dakota\",\r\n            \"type\": \"Home\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/updateUser",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"updateUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
